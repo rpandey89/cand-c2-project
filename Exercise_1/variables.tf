@@ -15,7 +15,8 @@ variable "secret_key" {
     default = ""
 }
 
-variable "lambda_function_name" {
+variable "subnet_id" {
+    description = "Subnet id in an existing vpc"
     type = string
-    default = "terraform_lambda_exercise"
+    default = ""
 }

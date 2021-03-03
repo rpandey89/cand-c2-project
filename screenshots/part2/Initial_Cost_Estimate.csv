@@ -1,0 +1,18 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Initial Estimate,US East (N. Virginia),,Amazon EC2,0,1525.2,18302.4,USD,"Operating system (Linux), Quantity (12), Pricing strategy (On-Demand Instances ), Storage amount (30 GB), Instance type (c5.xlarge)"
+Initial Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,2077.96,24935.52,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (2), Instance type (db.m4.4xlarge), Deployment option (Single-AZ), Pricing strategy (OnDemand), Additional backup storage (100 GB)"
+Initial Estimate,US East (N. Virginia),,S3 Standard,0,687.85,8254.2,USD,S3 Standard storage (500 GB per month)
+Initial Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,
+Initial Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,37.35,448.2,USD,Number of NAT Gateways (1)
+Initial Estimate,US East (N. Virginia),,Application Load Balancer,0,2368.85,28426.2,USD,Number of Application Load Balancers (2)
+Initial Estimate,US East (N. Virginia),,Amazon CloudWatch,0,573.125,6877.5,USD,"Number of Metrics (includes detailed and custom metrics) (1000), GetMetricData: Number of metrics requested (1000), GetMetricWidgetImage: Number of metrics requested (1000), Number of other API requests (1000), Standard Logs: Data Ingested (30 GB), Logs Delivered to S3: Data Ingested (30 GB), Number of Dashboards (50), Number of Standard Resolution Alarm Metrics (1000), Total number of events for DynamoDB (15 million events per month)"
+,,,,Total,7270.335,87244.02,,
+,,,,,,,,
+Assumptions:,,,,,,,,
+"1. Users upload photos 10 times in a day
+2. A user has on average 100 friends and views all their 10 photo updates each day
+3. photos are stored on s3 bucket",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
