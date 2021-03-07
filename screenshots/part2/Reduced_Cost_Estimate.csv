@@ -1,16 +1,17 @@
 Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-Reduced Estimate,US East (N. Virginia),,Amazon EC2,0,973.32,11679.84,USD,"Operating system (Linux), Quantity (12), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage amount (30 GB), Instance type (c5.xlarge)"
-Reduced Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,1438.48,17261.76,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (2), Instance type (db.m4.4xlarge), Deployment option (Single-AZ), Pricing strategy (Reserved 1yr No Upfront), Additional backup storage (100 GB)"
+Reduced Estimate,US East (N. Virginia),,Amazon EC2,0,622.92,7475.04,USD,"Operating system (Linux), Quantity (12), Pricing strategy (Standard Reserved Instances 3 Year No Upfront), Storage amount (30 GB), Instance type (c5a.xlarge)"
+Reduced Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,"1,169.40",14028,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (100 GB), Quantity (2), Instance type (db.m6g.4xlarge), Deployment option (Single-AZ), Pricing strategy (Reserved 1yr No Upfront), Additional backup storage (100 GB)"
 Reduced Estimate,US East (N. Virginia),,S3 Standard,0,687.85,8254.2,USD,S3 Standard storage (500 GB per month)
 Reduced Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,
 Reduced Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,37.35,448.2,USD,Number of NAT Gateways (1)
 Reduced Estimate,US East (N. Virginia),,Application Load Balancer,0,2368.85,28426.2,USD,Number of Application Load Balancers (2)
 Reduced Estimate,US East (N. Virginia),,Amazon CloudWatch,0,573.125,6877.5,USD,"Number of Metrics (includes detailed and custom metrics) (1000), GetMetricData: Number of metrics requested (1000), GetMetricWidgetImage: Number of metrics requested (1000), Number of other API requests (1000), Standard Logs: Data Ingested (30 GB), Logs Delivered to S3: Data Ingested (30 GB), Number of Dashboards (50), Number of Standard Resolution Alarm Metrics (1000), Total number of events for DynamoDB (15 million events per month)"
-,,,,Total,6078.975,72947.7,,
+Reduced Estimate,US East (N. Virginia),,Amazon Route 53,0,975,11700,USD,"Hosted Zones (2) with 10 HTTPS checks, latency checks inside and outside AWS"
+,,,,Total,6434.495,65509.14,,
 ,,,,,,,,
 "Reconfiguration Done:
-1. Changed the pricing model for c5 instances to standard reserved 1 yr from on-demand as the number of instances will be almost fixed throughout the year
-2. Changed the pricing model for db instances to reserved 1 yr from on-demand as the number of instances will be almost fixed throughout the year",,,,,,,,
+1. Changed the pricing model for c5 instances to c5a.xlarge and standard reserved 3 yr from on-demand as the number of instances will be almost fixed throughout the year
+2. Changed the instance class for database from db.m4.4xlarge to db.m6g.4xlarge that uses Amazon Graviton2 processors and should be able to provide decent performance as per the docs. Kept the pricing model for db instances to reserved 1 yr from on-demand as the number of instances will be almost fixed throughout the year",,,,,,,,
 ,,,,,,,,
 ,,,,,,,,
 Acknowledgement,,,,,,,,
